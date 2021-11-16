@@ -2,7 +2,7 @@
 # Ellis Brown , 11/16/2021
 # Coauthored by Copilot 
 # Assistance from Jackson Warhover : )
-# Comp Cat = 
+# Comp Cat = ^ . ^ = 
 # Testing script for lab 8, just runs tests, lol.
 # If you don't have permission, type "chmod -x testing_script"
 
