@@ -1,34 +1,4 @@
-# To use
-1. update sorting.cpp's main to have the following body. Otherwise, debugging information, and "success/failure" information will be printed to the screen.
-
-```c++
-int main(int argc, char* argv[]) {
-    string      sort_alg;
-    bool        debugging;
-    vector<int> data;
-
-    tie(sort_alg, debugging) = command_line_args(argc, argv, data);
-
-    if (debugging) print_vector(data);
-
-    chrono::duration<double> elapsed = run_algorithm(sort_alg, data);
-    cout  << fixed << elapsed.count();
-   
-    return 0;
-}
-```
-2. Make the script `make-timetable.sh` executable, by running the command
-
-> `chmod +x make-timetable.sh`
-
-3. Then, run the timetable script, by typing
-
-> `./make-timetable.sh`
-
-4. The output should be rendered in a table called `RESULT.md`
-
----
-# Example output
+# Sorting Times
 | Sorting Algo |   100 -r   | 1000 -r    | 10000 -r   | 100 dec    | 1000 dec   | 10000 dec 
 | ------------ | ---------- | ---------- | ---------- | ---------- | ---------- | ---------- |
 | insertionAux | 	0.000052  |  0.006872  |  0.464220  |  0.000096  |  0.009096  |  0.919145  |  
